@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="script.js"></script>
+
 </head>
+
 <body>
     <div class="main-body" style=" margin-left: 455px; margin-top: 30px;">
         <div>
             <div class="calculator">
                 <div class="output">
                     <input type="text" id="screen">
-                    
+                    <input type="text" id="screen1">
                 </div>
                 <div class="button-style">
                     <button class="btnClr" onclick="clrButton()">C</button>
+                    <button class="backButton" onclick="backButton()"><span class="backSpace">
+                            DEL
+                        </span></button>
                     <div class="row">
                         <button class="btn-style" onclick="buttonClick(7)">7</button>
                         <button class="btn-style" onclick="buttonClick(8)">8</button>
@@ -44,15 +49,17 @@
                         <button class="btn-style" onclick="buttonClick('+')">+</button>
                     </div>
 
-                    
+
                 </div>
-                
-               
-                
+
+
+
 
             </div>
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

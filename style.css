@@ -1,5 +1,10 @@
+html{
+    box-sizing: border-box;
+}
 body {
     background: rgba(204, 120, 120, 0.926);
+    
+    
 }
 .calculator{
     background: gray;
@@ -13,11 +18,31 @@ body {
 #screen{
     width:84%;
     height:50px;
-    margin: 34px;
-    border-radius: 8px;
-    pointer-events: none;
+    margin: 34px 34px 0px 34px;
+    border-radius: 8px 8px 0px 0px;
     border:solid 4px rgb(69, 62, 57);
+    border-bottom: none;
+    pointer-events: none;
     background: rgb(183, 157, 157);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(45, 42, 42);
+}
+#screen1{
+    width:84%;
+    height:50px;
+    margin: 0px 34px;
+    border:solid 4px rgb(69, 62, 57);
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    pointer-events: none;
+    background: rgb(183, 157, 157);
+    text-align: end;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(45, 42, 42);
+    padding: 0px 4px 0px 0px;
 }
 .btnClr{
     margin-inline-start: 33px;
@@ -25,12 +50,29 @@ body {
     height: 55px;
     background: rgb(234, 134, 103);
     margin-bottom: 5px;
-    margin-top: 53px;
+    margin-top: 30px;
     font-weight: bold;
     font-size: x-large;
     border-radius: .5rem;
     box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
 }
+
+
+.backButton{
+    margin-inline-start: 33px;
+    width: 80px;
+    height: 55px;
+    background: rgb(234, 134, 103);
+    /* margin-bottom: -50px; */
+    /* margin-top: px; */
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    
+
+}
+
 .btn-style{
     margin-inline-start: 34px;
     margin-top: 27px;
